@@ -63,17 +63,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gsap.to(progress, {
       width: progress.dataset.percent,
-      duration: 1.2,
+      duration: 5.2,
       ease: "power2.out",
-      delay: 0.3
+      delay: 0.13
     });
 
     let counter = { val: 0 };
     gsap.to(counter, {
       val: target,
-      duration: 1.2,
+      duration: 5.2,
       ease: "power2.out",
-      delay: 0.3,
+      delay: 0.13,
       onUpdate: () => {
         percent.textContent = `${Math.round(counter.val)}%`;
       }
