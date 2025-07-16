@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile Animation</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="brand">Smruti Rani Sahu</div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <span class="toggle-mode" id="toggle-mode"><i class="fa-solid fa-moon"></i></span>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="text">
+      <h1>Hello, I'm SMRUTI RANI SAHU</h1>
+      <span id="typing-text"></span>
+      <p>I hope you're doing well.</p>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a href="https://www.instagram.com/__ritu_08__" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/917809997718" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.linkedin.com/in/smruti-rani-sahu-57c56b" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/smruti284" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+
+      <!-- Project Box -->
+      <div class="project-box">
+        <button onclick="showProjects()">View Project</button>
+        <button onclick="location.href='mailto:smrutiranisahu08@gmail.com'">Hire Me</button>
+      </div>
+
+      <!-- Hidden Project List -->
+      <div id="project-list" class="hidden">
+        <ul>
+          <li><a href="https://smruti284.github.io/Quiz-App/" target="_blank">Quiz-App</a></li>
+          <li><a href="https://smruti284.github.io/BATTLE-HANDS/" target="_blank">BATTLE-HANDS</a></li>
+          <li><a href="https://smruti284.github.io/TRIPLE-THREAT/" target="_blank">TRIPLE-THREAT</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="profile-container">
+      <img id="profile-pic" src="./smrutiresume.jpg" alt="Profile Picture">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h1>About Me</h1>
+    <div class="about-container">
+      <img src="./background pic.jpg" alt="Smruti Rani Sahu" />
+      <div class="about-details">
+        <p>Hi! I'm Smruti Rani Sahu, a dedicated Frontend Developer with a passion for building modern, responsive, and user-centric websites. I specialize in HTML, CSS, JavaScript, and ReactJS, and also explore backend tools like Python, Django, and SQL to build complete web solutions.</p>
+        <p>I thrive on bringing ideas to life through interactive, visually engaging frontend designs. Crafting clean layouts, smooth animations, and intuitive user interfaces is where my creativity meets code.</p>
+        <a href="#home" class="btn">&#8592; Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="skills-section">
+      <h2>My Skills</h2>
+      <!-- Repeat for each skill -->
+      <div class="skill">
+        <span>HTML</span>
+        <div class="progress-bar">
+          <div class="progress" data-percent="100%"></div>
+          <span class="percent">0%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <span>CSS</span>
+        <div class="progress-bar">
+          <div class="progress" data-percent="90%"></div>
+          <span class="percent">0%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <span>JavaScript</span>
+        <div class="progress-bar">
+          <div class="progress" data-percent="85%"></div>
+          <span class="percent">0%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <span>React</span>
+        <div class="progress-bar">
+          <div class="progress" data-percent="75%"></div>
+          <span class="percent">0%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <span>SQL</span>
+        <div class="progress-bar">
+          <div class="progress" data-percent="80%"></div>
+          <span class="percent">0%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Python</span>
+        <div class="progress-bar">
+          <div class="progress" data-percent="80%"></div>
+          <span class="percent">0%</span>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Django</span>
+        <div class="progress-bar">
+          <div class="progress" data-percent="70%"></div>
+          <span class="percent">0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-box">
+      <div class="left-side">
+        <h2>Let's Connect</h2>
+        <p>I'd love to hear from you! Whether it's a project, question or just to say hi.</p>
+        <ul>
+          <li><i class="fas fa-envelope"></i> smrutiranisahu08@gmail.com</li>
+          <li><i class="fas fa-phone"></i> +91 7809997718</li>
+          <li><i class="fas fa-map-marker-alt"></i> Bangalore, India</li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <p id="successMsg" style="color: green; margin-top: 10px;"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JS -->
+  <script src="./portfolio.js"></script>
+</body>
+</html>
