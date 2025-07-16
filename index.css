@@ -378,3 +378,112 @@ body {
   opacity: 0.6;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+  }
+
+  #home {
+    flex-direction: column;
+    padding: 80px 20px 30px;
+    text-align: center;
+  }
+
+  #home .text {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .profile-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+
+  .skills-section {
+    padding: 40px 15px;
+  }
+
+  .skills-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .about-container img {
+    width: 180px;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+
+  .about-details {
+    padding: 0 10px;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left-side, .right-side {
+    padding: 20px;
+  }
+
+  .left-side h2 {
+    font-size: 24px;
+  }
+
+  .left-side p,
+  .left-side ul li {
+    font-size: 14px;
+  }
+
+  .right-side input,
+  .right-side textarea {
+    font-size: 14px;
+  }
+
+  .right-side button {
+    font-size: 14px;
+  }
+
+  .project-box {
+    margin-left: 0;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .project-box button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .social-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    font-size: 24px;
+  }
+}
+
+
+
