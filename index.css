@@ -253,7 +253,7 @@ transition: 150ms;
 .skill {
   margin-bottom: 25px;
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
 }
 
 .skill span {
