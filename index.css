@@ -419,17 +419,19 @@ body {
     margin-bottom: 30px;
   }
 
-  .profile-container {
-    width: 180px;
-    height: 180px;
-    margin: 0 auto;
-  }
+.profile-container {
+  width: 180px;
+  height: 180px;
+  margin-top: 30px;
+}
 
-  .profile-container img {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-  }
+.profile-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 
   .project-box {
     margin-left: 0;
