@@ -383,14 +383,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 14px;
+    padding: 13px;
     text-align: center;
     background-color: white; 
   }
 
   .brand {
-    font-size: 20px;
-    margin-bottom: 9px;
+    font-size: 19px;
+    margin-bottom: 8.7px;
   }
 
   .nav-links {
@@ -406,7 +406,7 @@ body {
   }
 
   .toggle-mode {
-    margin-top: 8.5px;
+    margin-top: 8px;
   }
 
   #home {
@@ -420,21 +420,17 @@ body {
     margin-bottom: 30px;
   }
 
-.profile-container {
+ .profile-container {
   width: 180px;
   height: 180px;
-  margin-top: 15px;
-  border-radius: 4px solid black;
+   border: 5px solid rgb(10, 10, 13);
 }
 
 .profile-container img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
+  object-position: center; 
   border-radius: 50%;
 }
-
-
   .project-box {
     margin-left: 0;
     max-width: 100%;
