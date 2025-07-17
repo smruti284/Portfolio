@@ -89,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
     successMsg.textContent = "Thank you! Your message has been submitted.";
     form.reset();
   });
-  <script>
   // Sticky navbar on scroll
   window.addEventListener('scroll', () => {
     const navbar = document.getElementById('navbar');
@@ -101,6 +100,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const list = document.getElementById('project-list');
     list.classList.toggle('hidden');
   }
-</script>
+  // Animate skills
+window.addEventListener("DOMContentLoaded", () => {
+  const skills = document.querySelectorAll(".skill");
+
+  skills.forEach((skill, index) => {
+    setTimeout(() => {
+      const progressBar = skill.querySelector(".progress");
+      const percent = skill.querySelector(".percent");
+      const target = progressBar.getAttribute("data-percent");
+
+      progressBar.style.width = target;
+      percent.textContent = target;
+
+      skill.style.opacity = 1;
+      skill.style.transform = "translateY(0)";
+    }, index * 300); // delay for staggered animation
+  });
+});
+
 
 });
