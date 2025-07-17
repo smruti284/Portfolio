@@ -89,4 +89,18 @@ document.addEventListener("DOMContentLoaded", () => {
     successMsg.textContent = "Thank you! Your message has been submitted.";
     form.reset();
   });
+  <script>
+  // Sticky navbar on scroll
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Project box toggle
+  function showProjects() {
+    const list = document.getElementById('project-list');
+    list.classList.toggle('hidden');
+  }
+</script>
+
 });
