@@ -83,7 +83,7 @@
             height: 100%;
             object-fit: cover;
         }
-        .social-links {
+ .social-links {
       display: flex;
       gap: 15px;
     }
